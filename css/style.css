@@ -1,5 +1,5 @@
 /* Imported Font */
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 /* Reset */
 * {
@@ -10,5 +10,59 @@
 
 /* General Classes */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+main {
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+
+main > h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+main > p {
+    padding: 0 9rem;
+    color: rgb(154, 153, 153);
+    margin-bottom: 2rem;
+}
+
+main > h1,
+main > p {
+    text-align: center;
+}
+
+main .cardWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .cardWrapper article.card {
+    width: calc(100% / 3 - 2rem);
+    margin: 0 2rem 2rem 0;
+    background-color: white;
+}
+
+article.card .imgWrapper img {
+    width: 100%;
+}
+
+article.card .infoWrapper {
+    padding: 0.75rem;
+    text-align: center;
+}
+
+article.card .infoWrapper h2 {
+    margin-bottom: 0.25rem;
+    color: rgb(117, 112, 105);
+    font-size: 1.15rem;
+}
+
+article.card .infoWrapper p {
+    font-size: 0.80rem;
+    color: rgb(154, 153, 153);
 }
